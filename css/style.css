@@ -23,12 +23,23 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    display: flex;
+    justify-content: center;
 }
 
-.memory-card-game {
-    width: 640px;
-    height: 640px;
+.memory-card-game,
+.col-12 {
+    max-width: 575px;
+    height: 560px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.memory-card-game,
+.col-sm-12 {
+    max-width: 768px;
+    max-height: 560px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
