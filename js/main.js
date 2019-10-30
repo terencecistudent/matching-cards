@@ -6,8 +6,6 @@ $(document).ready(function() {
     let lockGame = false;
     let firstCard, secondCard;
 
-    const resetButton = document.getElementById("reset-button");
-
     /*------------------------------------Flips the card--*/
     function flipCard() {
         if(lockGame) {
@@ -79,6 +77,8 @@ $(document).ready(function() {
         })
     })();
 
+
+    /*------------------------------------Reset Game--*/
 
     // loop through list of cards
     cards.forEach(card => card.addEventListener("click", flipCard));
