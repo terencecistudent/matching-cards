@@ -6,6 +6,8 @@ $(document).ready(function() {
     let lockGame = false;
     let firstCard, secondCard;
 
+    const resetButton = document.getElementById("reset-button");
+
     /*------------------------------------Flips the card--*/
     function flipCard() {
         if(lockGame) {
